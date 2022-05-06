@@ -24,7 +24,7 @@ function App() {
       .delete(`https://jsonplaceholder.typicode.com/posts/${id}`)
       .then((resp) => {
         /* 1. alternatif */
-        const arr = notes.filter(item=> item.id != id);
+        const arr = notes.filter(item=> item.id !== id);
         setNotes(arr);
 
         /* ikinci alternatif */
